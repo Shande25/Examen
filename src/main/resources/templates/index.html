@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <title>STEAM!</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="imagenes/logo.png" alt="Steam Logo" style="height: 24px;">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">TIENDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COMUNIDAD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ACERCA DE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SOPORTE</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="top-nav d-flex justify-content-between align-items-center">
+    <div>
+        <a href="#">Tu tienda</a>
+        <a href="#">Nuevo y destacable</a>
+        <a href="#">Categorías</a>
+        <a href="#">Tienda de puntos</a>
+        <a href="#">Noticias</a>
+        <a href="#">Laboratorios</a>
+    </div>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="buscar">
+        <button class="search-button">🔍</button>
+    </div>
+</div>
+
+<div class="side-nav">
+    <a href="#">Lo más vendido</a>
+    <a href="#">Novedades</a>
+    <a href="#">Próximamente</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Títulos de RV</a>
+    <a href="#">Compatibles con mandos</a>
+    <a href="#">Perfecto para Deck</a>
+    <a href="#">Free to Play</a>
+    <a href="#">Acceso anticipado</a>
+    <a href="#">Acción</a>
+    <a href="#">Aventura</a>
+    <a href="#">Carreras</a>
+    <a href="#">Casuales</a>
+    <a href="#">Deportes</a>
+    <a href="#">Estrategia</a>
+    <a href="#">Indie</a>
+    <a href="#">Multijugador masivo</a>
+    <a href="#">Rol</a>
+    <a href="#">Simulación</a>
+</div>
+
+<div class="content-container">
+    <!--Carousel-->
+    <div class="carousel-container">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="leelos">
+                        <img src="imagenes/pubg.jpg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="leelos">
+                        <img src="imagenes/cs2.jpg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="leelos">
+                        <img src="imagenes/deadby.jpg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="special-offers mt-4">
+        <h2>Ofertas especiales</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <a href="leelos">
+                        <img src="imagenes/valorant.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Valorant</h5>
+                        <p class="card-text">Un emocionante shooter táctico en primera persona con héroes únicos y habilidades especiales.</p>
+                        <p class="card-text"><small class="text-muted">En oferta por tiempo limitado</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a href="leelos">
+                        <img src="imagenes/lol.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">League of Legends</h5>
+                        <p class="card-text">Únete a la grieta del invocador y demuestra tus habilidades en este popular juego MOBA.</p>
+                        <p class="card-text"><small class="text-muted">Descuento del 50% en todos los aspectos</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-section mt-4">
+        <h2>Explora por categorías</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <a href="leelos">
+                        <img src="imagenes/accion.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Acción</h5>
+                        <p class="card-text">Experimenta la adrenalina y la emoción de los mejores juegos de acción.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a href="leelos">
+                        <img src="imagenes/aventura.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Aventura</h5>
+                        <p class="card-text">Embárcate en épicas aventuras y descubre mundos desconocidos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a href="leelos">
+                        <img src="imagenes/deportes.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Deportes</h5>
+                        <p class="card-text">Participa en competiciones deportivas y lleva a tu equipo a la victoria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer mt-4">
+    <p>&copy; 2023 Steam. Todos los derechos reservados.</p>
+    <p>
+        <a href="#">Acerca de</a>
+        <a href="#">Condiciones del servicio</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Soporte</a>
+    </p>
+</div>
+</body>
+</html>

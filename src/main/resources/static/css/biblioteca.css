@@ -1,0 +1,39 @@
+body {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.container {
+    margin-top: 20px;
+    flex: 1;
+}
+
+.card {
+    background-color: #333;
+    color: #fff;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.card-text {
+    color: #ccc;
+}
+
+.footer {
+    margin-top: auto;
+}

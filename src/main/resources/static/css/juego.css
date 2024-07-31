@@ -1,0 +1,95 @@
+/* Estilos generales para el carrito */
+#cart-container {
+    background-color: #000; /* Fondo negro para el contenedor del carrito */
+    color: #fff; /* Texto en blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el carrito */
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrar el contenedor */
+}
+
+/* Estilos para los elementos del carrito */
+#cart-items {
+    background-color: #000; /* Fondo negro para la lista de elementos del carrito */
+    color: #fff; /* Texto en blanco */
+    padding: 0; /* Sin espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    list-style-type: none; /* Quitar viñetas de la lista */
+    margin: 0; /* Sin márgenes */
+}
+
+#cart-items li {
+    background-color: #333; /* Fondo gris oscuro para cada elemento del carrito */
+    border: 1px solid #444; /* Borde gris más claro */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 5px; /* Espaciado entre elementos */
+    border-radius: 5px; /* Bordes redondeados */
+    display: flex; /* Flexbox para alinear botones */
+    justify-content: space-between; /* Espaciado entre texto y botones */
+    align-items: center; /* Alinear verticalmente */
+}
+
+#cart-items .btn {
+    color: #fff; /* Texto de los botones en blanco */
+    background-color: #555; /* Fondo gris oscuro para los botones */
+    border: none; /* Sin borde */
+    border-radius: 3px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno en los botones */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+#cart-items .btn:hover {
+    background-color: #777; /* Fondo gris más claro al pasar el mouse */
+}
+
+/* Otros estilos del body */
+body {
+    background-color: #000; /* Fondo negro para todo el cuerpo */
+    color: #fff; /* Texto en blanco */
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #333; /* Fondo gris oscuro para la barra de navegación */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff; /* Texto en blanco en la barra de navegación */
+}
+
+.carousel {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.carousel-item img,
+.carousel-item iframe {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-caption h3 {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para la leyenda del carrusel */
+    padding: 10px;
+    color: #fff; /* Texto en blanco */
+}
+
+.purchase-button {
+    background-color: #007bff; /* Fondo azul para el botón de compra */
+    color: #fff; /* Texto en blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-button:hover {
+    background-color: #0056b3; /* Fondo azul más oscuro al pasar el mouse */
+}
+
+.footer {
+    margin-top: 20px;
+}

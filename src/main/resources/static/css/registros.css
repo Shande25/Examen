@@ -1,0 +1,205 @@
+body {
+    background-color: #1b2838;
+    color: #c6d4df;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-custom {
+    background-color: #343a40;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .nav-link:hover {
+    color: #ffdd57;
+}
+
+.top-nav {
+    background-color: #1b2838;
+    color: #c6d4df;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav a {
+    color: #c6d4df;
+    margin-right: 15px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    color: #ffdd57;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-caption:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    margin-top: 56px;
+}
+
+.side-nav {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #1b2838;
+    padding-top: 20px;
+}
+
+.side-nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #c6d4df;
+    display: block;
+}
+
+.side-nav a:hover {
+    background-color: #575d69;
+    color: #ffdd57;
+}
+
+.content-container {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.special-offer img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    background-color: #3c3f41;
+    border: none;
+    color: #c6d4df;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.search-button {
+    background-color: #4a90e2;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.special-offers .card,
+.category-section .card {
+    background-color: #3c3f41;
+    border: none;
+    color: #c6d4df;
+}
+
+.footer {
+    background-color: #171a21;
+    padding: 20px;
+    color: #c6d4df;
+    text-align: center;
+}
+
+.footer a {
+    color: #c6d4df;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #ffdd57;
+}
+
+/* Estilos para formularios de login y registro */
+.form-container {
+    background: #2e3a42;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto; /* Centrar el formulario */
+}
+
+.form-container h2 {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-label {
+    color: #b0b0b0;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #4a90e2;
+    background-color: #3c3f41;
+    color: #c6d4df;
+}
+
+.btn-primary {
+    background-color: #4a90d9;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #357abd;
+}
+
+.form-switch {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form-switch a {
+    color: #4a90d9;
+    text-decoration: none;
+}
+
+.form-switch a:hover {
+    text-decoration: underline;
+}
