@@ -12,10 +12,8 @@ public class UsuarioServicio {
     private UsuarioRepositorio usuarioRepositorio;
 
     public Usuario registerUser(Usuario usuario) {
-        // Aquí podrías hacer validaciones antes de guardar si es necesario
         return usuarioRepositorio.save(usuario);
     }
-
     public Usuario findByEmail(String email) {
         return usuarioRepositorio.findByEmail(email);
     }

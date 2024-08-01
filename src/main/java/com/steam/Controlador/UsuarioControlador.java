@@ -38,7 +38,7 @@ public class UsuarioControlador {
         Usuario foundUser = usuarioServicio.findByEmail(usuario.getEmail());
         if (foundUser != null && usuario.getPassword().equals(foundUser.getPassword())) {
             model.addAttribute("message", "Inicio de sesión exitoso");
-            return "home"; // Página de inicio después de login exitoso
+            return "index"; // Página de inicio después de login exitoso
         } else {
             model.addAttribute("message", "Credenciales incorrectas");
             return "login";

@@ -1,0 +1,114 @@
+body {
+    background-color: #1b2838;
+    color: #c6d4df;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Para evitar barras de desplazamiento */
+    animation: fadeIn 1s ease-in;
+}
+
+.container {
+    background-color: #2e3a42;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.container h1 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-in;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-label {
+    color: #b0b0b0;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #4a90e2;
+    background-color: #3c3f41;
+    color: #c6d4df;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ffdd57;
+    box-shadow: 0 0 8px rgba(255, 221, 87, 0.5);
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #4a90d9;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+}
+
+a {
+    color: #4a90d9;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
